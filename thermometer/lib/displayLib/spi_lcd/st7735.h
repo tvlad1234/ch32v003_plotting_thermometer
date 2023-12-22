@@ -1,0 +1,16 @@
+#ifndef _ST7735_H
+#define _ST7735_H
+
+#define INITR_GREENTAB 0x00
+#define INITR_REDTAB 0x01
+#define INITR_BLACKTAB 0x02
+#define INITR_18GREENTAB INITR_GREENTAB
+#define INITR_18REDTAB INITR_REDTAB
+#define INITR_18BLACKTAB INITR_BLACKTAB
+#define INITR_144GREENTAB 0x01
+#define INITR_MINI160x80 0x04
+#define INITR_HALLOWING 0x05
+
+void lcd_st7735_init(spi_lcd *lcd, uint8_t options);
+
+#endif
